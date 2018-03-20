@@ -22,7 +22,7 @@ class TodoItem extends React.Component {
             className="toggle"
             type="checkbox"
             checked={todo.isCompleted}
-            onChange={todo.handleToggle}
+            onChange={this.handleToggle}
           />
           <label>{todo.title}</label>
           <button className="destroy" onClick={this.handleRemove} />
